@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Construye tu aplicación con Gradle
-RUN mvm clean install
+RUN mvn clean install
 
 # Cambia a una imagen más ligera de OpenJDK 17 para la ejecución
 FROM openjdk:17-jdk-slim
